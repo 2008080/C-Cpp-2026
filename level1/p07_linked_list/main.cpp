@@ -22,6 +22,9 @@ int main(){
     }
     ne[h]=-1;
     h=p;
+    for (int i=h;i!=-1;i=ne[i]) {
+        printf("%d ",e[i]);
+    }
     int res=-1;
     for(int i=h;i!=-1;i=ne[i]){
         if(e[i]==5){
